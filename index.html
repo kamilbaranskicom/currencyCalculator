@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Kalkulator walut</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/currencyCalculator.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+    <script src="js/currencyCalculator.js" defer></script>
+</head>
+
+<body>
+    <div class="currencyCalculator">
+        <header>
+            <h1>Kalkulator walut</h1>
+        </header>
+        <main>
+            <form>
+                <table class="currencyCalculator__table">
+                    <tr>
+                        <th class="currencyCalculator__tableCell currencyCalculator__tableHeader" scope="col">
+                            <!-- There were LABELs, but they were empty, so I removed them. Currency calculator self-explains. -->
+                            <select class="currencyCalculator__select js-currency1">
+                                <option>USD</option>
+                            </select>
+                        </th>
+                        <th class="currencyCalculator__tableCell currencyCalculator__tableHeader" scope="col">
+                            <select class="currencyCalculator__select js-currency2">
+                                <option>PLN</option>
+                            </select>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td class="currencyCalculator__tableCell">
+                            <input type="number" value="100" class="currencyCalculator__input js-amount1" step="0.01"
+                                placeholder="Wpisz kwotę">
+                        </td>
+                        <td class="currencyCalculator__tableCell">
+                            <input type="number" value="300" class="currencyCalculator__input js-amount2" step="0.01"
+                                placeholder="Wpisz kwotę">
+                        </td>
+                    </tr>
+                </table>
+                <p class="currencyCalculator__p currencyCalculator__status">Status: <span
+                        class="js-status">Inicjalizacja...</span></p>
+                <p
+                    class="currencyCalculator__p currencyCalculator--warning js-timestampParagraph">
+                    Aktualizacja kursów: <time class="js-timestampDate">Nigdy, używamy niepełnej tabeli orientacyjnej!
+                    </time>
+                </p>
+                <button class="js-downloadExchangeRates currencyCalculator__button">Zaktualizuj kursy</button>
+            </form>
+        </main>
+        <footer class="currencyCalculator__footer">
+            <p class="currencyCalculator__p">Skrypt korzysta z serwisu <a href="https://openexchangerates.org/">Open
+                    Exchange Rates</a> oraz zapasowej lokalnej tabeli w razie problemów z połączeniem. &copy; <a
+                    href="http://kamilbaranski.com/">Kamil Barański</a> (<time>2020.06.14</time>) jako ćwiczenie do <a
+                    href="https://youcode.pl/">YouCode</a>. Ale wiadomo, zrzekamy się jakiejkolwiek odpowiedzialności,
+                nie podejmuj żadnych decyzji bez konsultacji z ekspertem, lekarzem, pilotem, mamą.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
