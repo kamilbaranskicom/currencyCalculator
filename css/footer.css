@@ -1,0 +1,12 @@
+.footer {
+    border-top: 1px dotted black;
+    margin-top: 20px;
+    background-color: #effd;
+    padding: 5px;
+    font-size: 80%;
+}
+
+.footer__paragraph {
+    margin: 0px;
+    padding: 0px 2px;
+}

@@ -1,0 +1,87 @@
+.currencyConverter__tableContainer {
+	overflow-x: auto;
+	margin: 10px 0px;
+}
+
+.currencyConverter__table {
+	border-collapse: collapse;
+	text-align: center;
+	margin: 0px;
+	background-color: #eff7;
+}
+
+.currencyConverter__tableCell {
+	padding: 20px 10px;
+	border: 3px inset #9aa;
+	font-weight: bold;
+	position: relative;
+}
+
+.currencyConverter__plusMinusContainer {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	margin: 0px;
+	padding: 0px;
+	line-height: 0px;
+}
+
+.currencyConverter__plusMinusButton {
+	background-color:#fffd;
+	margin: 0px;
+	padding: 0px;
+	width: 17px;
+	height: 17px;
+	font-size: 12px;
+	border-width: 1px;
+	font-weight:bold;
+}
+
+.currencyConverter__plusMinusButton:hover:not([disabled=""]) {
+	background-color: #fff6;
+}
+
+.currencyConverter__plusMinusButton:active:not([disabled=""]) {
+	background-color: #cdd7;
+}
+
+.currencyConverter__plusMinusButton:disabled {
+	color:#aaa;
+}
+
+.currencyConverter__formField {
+	background-color: #fffd;
+	padding: 5px;
+	display: block;
+	margin: 5px;
+	width: 120px;
+}
+
+.currencyConverter__paragraph {
+	margin: 0px;
+	padding: 0px 2px;
+}
+
+.currencyConverter--warning {
+	background-color: red;
+	color: white;
+	font-weight: bold;
+}
+
+.currencyConverter__button {
+	margin: 10px 0px 0px auto;
+	padding: 10px;
+	background-color: #eff7;
+	border-color: #9aa;
+	border-width: 3px;
+	display: block;
+}
+
+.currencyConverter__button:hover {
+	background-color: #f7ffffe0;
+}
+
+.currencyConverter__button:active {
+	background-color: #cdd7;
+}
+

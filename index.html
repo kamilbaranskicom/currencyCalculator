@@ -6,59 +6,49 @@
     <title>Kalkulator walut</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="css/currencyCalculator.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/currencyConverter.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
-    <script src="js/currencyCalculator.js" defer></script>
+    <script src="js/currencyConverter.js" defer></script>
+    <meta property="og:image"
+        content="http://kamilbaranski.com/pliki/youcode/konwerter-walut/images/online-currency-exchange-benefits.jpg">
 </head>
 
 <body>
-    <div class="currencyCalculator">
+    <div class="container">
         <header>
-            <h1>Kalkulator walut</h1>
+            <h1><span title="Masz swój converter ;)">Konwerter</span> walut</h1>
         </header>
         <main>
-            <form>
-                <table class="currencyCalculator__table">
-                    <tr>
-                        <th class="currencyCalculator__tableCell currencyCalculator__tableHeader" scope="col">
-                            <!-- There were LABELs, but they were empty, so I removed them. Currency calculator self-explains. -->
-                            <select class="currencyCalculator__select js-currency1">
-                                <option>USD</option>
-                            </select>
-                        </th>
-                        <th class="currencyCalculator__tableCell currencyCalculator__tableHeader" scope="col">
-                            <select class="currencyCalculator__select js-currency2">
-                                <option>PLN</option>
-                            </select>
-                        </th>
-                    </tr>
-                    <tr>
-                        <td class="currencyCalculator__tableCell">
-                            <input type="number" value="100" class="currencyCalculator__input js-amount1" step="0.01"
-                                placeholder="Wpisz kwotę">
-                        </td>
-                        <td class="currencyCalculator__tableCell">
-                            <input type="number" value="300" class="currencyCalculator__input js-amount2" step="0.01"
-                                placeholder="Wpisz kwotę">
-                        </td>
-                    </tr>
-                </table>
-                <p class="currencyCalculator__p currencyCalculator__status">Status: <span
-                        class="js-status">Inicjalizacja...</span></p>
-                <p
-                    class="currencyCalculator__p currencyCalculator--warning js-timestampParagraph">
-                    Aktualizacja kursów: <time class="js-timestampDate">Nigdy, używamy niepełnej tabeli orientacyjnej!
-                    </time>
+            <form class="currencyConverter">
+                <div class="currencyConverter__tableContainer">
+                    <table class="currencyConverter__table">
+                        <tr class="js-headerRow">
+                        </tr>
+                        <tr class="js-valueRow">
+                        </tr>
+                    </table>
+                </div>
+                <p class="currencyConverter__paragraph">Status: <span class="js-status">Inicjalizacja...</span></p>
+                <p class="currencyConverter__paragraph currencyConverter--warning js-timestampParagraph">
+                    Aktualizacja kursów: <span class="js-timestampTime">Jeszcze nigdy; używamy niepełnej tabeli
+                        orientacyjnej!
+                    </span>
                 </p>
-                <button class="js-downloadExchangeRates currencyCalculator__button">Zaktualizuj kursy</button>
+                <button class="currencyConverter__button js-downloadExchangeRates" type="button">Zaktualizuj
+                    kursy</button>
             </form>
         </main>
-        <footer class="currencyCalculator__footer">
-            <p class="currencyCalculator__p">Skrypt korzysta z serwisu <a href="https://openexchangerates.org/">Open
+        <footer class="footer">
+            <p class="footer__paragraph">Skrypt korzysta z serwisu <a href="https://openexchangerates.org/"
+                    target="_BLANK">Open
                     Exchange Rates</a> oraz zapasowej lokalnej tabeli w razie problemów z połączeniem. &copy; <a
-                    href="http://kamilbaranski.com/">Kamil Barański</a> (<time>2020.06.14</time>) jako ćwiczenie do <a
-                    href="https://youcode.pl/">YouCode</a>. Ale wiadomo, zrzekamy się jakiejkolwiek odpowiedzialności,
-                nie podejmuj żadnych decyzji bez konsultacji z ekspertem, lekarzem, pilotem, mamą.</p>
+                    href="http://kamilbaranski.com/" target="_BLANK">Kamil Barański</a> (<time
+                    datetime="2020-06-14">2020.06.14</time>) jako ćwiczenie do <a href="https://youcode.pl/"
+                    target="_BLANK">YouCode</a>. Ale wiadomo, zrzekamy się jakiejkolwiek odpowiedzialności,
+                nie podejmuj żadnych decyzji bez konsultacji z ekspertem, lekarzem, pilotem, mamą. PS. <em>EGB</em> to
+                Eurogąbki z kursem usztywnionym do złotówki (specjalnie dla 🐸 Żaby).</p>
         </footer>
     </div>
 </body>

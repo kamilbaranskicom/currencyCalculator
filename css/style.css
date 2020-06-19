@@ -1,0 +1,37 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 20px;
+    line-height: 140%;
+    background-color: #cdd;
+    background-image: url(../images/online-currency-exchange-benefits.jpg);
+    background-size: 200%;
+    color: #333;
+}
+
+a:link, a:visited {
+    color: navy;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+a:active {
+    color: black;
+}
+
+.container {
+    margin: 0 auto;
+    background-color: #fffd;
+    box-shadow: 0px 0px 10px #fff7;
+    padding: 20px 40px 40px;
+}
